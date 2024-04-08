@@ -6,7 +6,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     build: .
     ports:
-      - "8080:80"
+      - "8080:8080"
     depends_on:
       postgres:
         condition: service_healthy
