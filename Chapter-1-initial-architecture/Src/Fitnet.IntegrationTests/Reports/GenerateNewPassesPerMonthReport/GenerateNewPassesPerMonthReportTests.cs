@@ -1,4 +1,4 @@
-namespace EvolutionaryArchitecture.Fitnet.IntegrationTests.Reports.GenerateNewPassesPerMonthReport;
+﻿namespace EvolutionaryArchitecture.Fitnet.IntegrationTests.Reports.GenerateNewPassesPerMonthReport;
 
 using Common.TestEngine.Configuration;
 using Common.TestEngine.IntegrationEvents.Handlers;
@@ -28,7 +28,7 @@ public sealed class GenerateNewPassesPerMonthReportTests : IClassFixture<WebAppl
 
     [Theory]
     [ClassData(typeof(ReportTestCases))]
-    internal async Task Given_valid_generate_new_report_request_Then_should_return_correct_data(
+    internal async Task ShouldReturnData(
         List<PassRegistrationDateRange> passRegistrationDateRanges)
     {
         // Arrange

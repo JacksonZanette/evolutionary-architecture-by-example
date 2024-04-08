@@ -1,5 +1,8 @@
-namespace EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.IntegrationEvents.Handlers;
+﻿namespace EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.IntegrationEvents.Handlers;
 
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Infrastructure.Events;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;

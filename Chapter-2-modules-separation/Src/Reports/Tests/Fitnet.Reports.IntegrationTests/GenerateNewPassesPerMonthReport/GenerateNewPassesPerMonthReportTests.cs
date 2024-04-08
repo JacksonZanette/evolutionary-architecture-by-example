@@ -1,4 +1,4 @@
-namespace EvolutionaryArchitecture.Fitnet.Reports.IntegrationTests.GenerateNewPassesPerMonthReport;
+﻿namespace EvolutionaryArchitecture.Fitnet.Reports.IntegrationTests.GenerateNewPassesPerMonthReport;
 
 using Common.IntegrationTests.TestEngine;
 using Common.IntegrationTests.TestEngine.Configuration;
@@ -6,11 +6,9 @@ using Common.IntegrationTests.TestEngine.Time;
 using Contracts.IntegrationEvents;
 using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.Database;
 using EvolutionaryArchitecture.Fitnet.Common.IntegrationTests.TestEngine.IntegrationEvents.Handlers;
-using Reports;
 using GenerateNewPassesRegistrationsPerMonthReport.Dtos;
 using TestData;
 
-[UsesVerify]
 public sealed class GenerateNewPassesPerMonthReportTests : IClassFixture<FitnetWebApplicationFactory<Program>>, IClassFixture<DatabaseContainer>
 {
     private static readonly FakeTimeProvider FakeTimeProvider = new(ReportTestCases.FakeNowDate);
@@ -29,7 +27,7 @@ public sealed class GenerateNewPassesPerMonthReportTests : IClassFixture<FitnetW
 
     [Theory]
     [ClassData(typeof(ReportTestCases))]
-    internal async Task Given_valid_generate_new_report_request_Then_should_return_correct_data(List<PassRegistrationDateRange> passRegistrationDateRanges)
+    internal async Task ShouldReturnData(List<PassRegistrationDateRange> passRegistrationDateRanges)
     {
         // Arrange
         await RegisterPasses(passRegistrationDateRanges);

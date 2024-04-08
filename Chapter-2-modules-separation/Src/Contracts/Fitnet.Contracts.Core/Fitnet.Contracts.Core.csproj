@@ -6,5 +6,9 @@
   <ItemGroup>
     <InternalsVisibleTo Include="EvolutionaryArchitecture.Fitnet.Contracts.Core.UnitTests" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.23.1.88495" />
+  </ItemGroup>
   
 </Project>

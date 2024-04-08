@@ -5,8 +5,8 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -18,6 +18,10 @@
         <ProjectReference Include="..\Offers\Fitnet.Offers.Api\Fitnet.Offers.Api.csproj" />
         <ProjectReference Include="..\Passes\Fitnet.Passes.Api\Fitnet.Passes.Api.csproj" />
         <ProjectReference Include="..\Reports\Fitnet.Reports\Fitnet.Reports.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="SonarAnalyzer.CSharp" Version="9.23.1.88495" />
     </ItemGroup>
 
 </Project>

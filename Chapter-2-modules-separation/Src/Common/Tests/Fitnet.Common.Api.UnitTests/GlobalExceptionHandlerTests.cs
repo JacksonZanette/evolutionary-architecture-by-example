@@ -1,4 +1,4 @@
-namespace EvolutionaryArchitecture.Fitnet.Common.Api.UnitTests;
+﻿namespace EvolutionaryArchitecture.Fitnet.Common.Api.UnitTests;
 
 using ErrorHandling;
 using Core.BusinessRules;
